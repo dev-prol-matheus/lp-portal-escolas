@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/style/Contact.css">
     <link rel="stylesheet" href="./assets/style/Footer.css">
     <link rel="stylesheet" href="./assets/style/Header.css">
+    <link rel="stylesheet" href="./assets/style/main.css">
     <link rel="stylesheet" href="./assets/style/NavBar.css">
     <link rel="stylesheet" href="./assets/style/Partners.css">
     <link rel="stylesheet" href="./assets/style/Pricing.css">
@@ -42,6 +43,49 @@
             <span class="bar"></span>
         </div>
     </nav>
+
+    <header>
+        <div class="left-side">
+            <span>Lorem ipsum dolor sit amet</span>
+            <h1>Gerencie Seus Leads de forma eficiente</h1>
+            <p>Transforme a gestão de seus leads com um painel administrativo intuitivo e poderoso. Controle, acompanhe e otimize seus processos de vendas diretamente de um único lugar.</p>
+            <div class="buttons">
+                <button>Call to Action</button>
+                <button class="btn2">Call secundário</button>
+            </div>
+        </div>
+        <div class="right-side">
+            <img src="./assets/img/foto-diretor.png" alt="Prol Educa">
+        </div>
+    </header>
+
+    <section>
+        <div class="advantages">
+            <span><img src="./assets/img/chapeu.svg" alt="Prol Educa"></span>
+            <p>Adquira mais alunos</p>
+        </div>
+        <div class="advantages">
+            <span><img src="./assets/img/grafico.svg" alt="Prol Educa"></span>
+            <p>Painel administrativo</p>
+        </div>
+        <div class="advantages">
+            <span><img src="./assets/img/chapeu.svg" alt="Prol Educa"></span>
+            <p>Multiplique sua receita</p>
+        </div>
+    </section>
+
+    <section class="product">
+        <span>O Produto</span>
+        <h1>Vídeo de apresentação do produto</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <video controls>
+            <source src="product-video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+        <button>Call Action to Button</button>
+    </section>
+
+
 
     <script>
         // Função para alternar o menu hambúrguer
