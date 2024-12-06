@@ -1,0 +1,32 @@
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 97px 0;
+    background-color: #07075C;
+}
+
+
+
+footer .container .footer-left img {
+    filter: grayscale(100%) brightness(200%);
+}
+
+footer .container .footer-right {
+    display: flex;
+    gap: 64px;
+}
+
+footer .container .footer-right .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .container .footer-right  h2 {
+    color: #FFFFFF;
+}
+
+footer .container .footer-right a {
+    color: #B3B3B3;
+    text-decoration: none;
+}

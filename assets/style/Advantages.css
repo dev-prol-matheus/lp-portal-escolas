@@ -1,9 +1,28 @@
+.advantages {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+}
+
 .advantages .container .card {
     display: flex;
-    background-color: #FAFAFA;
+    gap: 37px;
     padding: 32px 37px;
+    border-radius: 10px;
+    background-color: #FAFAFA;  
 }
 
 .card span {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
     background-color: #07075C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantages .container .card h2 {
+    max-width: 177px;
+    align-content: center;
 }

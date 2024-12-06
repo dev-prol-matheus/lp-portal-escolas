@@ -1,0 +1,14 @@
+.aboutus {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+}
+
+
+.aboutus .container .about-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 492px;
+    gap: 25px;
+}
