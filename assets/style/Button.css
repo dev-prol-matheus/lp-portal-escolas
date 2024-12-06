@@ -1,16 +1,7 @@
-.call-to-action-button{
+.call-to-action-button {
     background-color: #2195F2;
     color: #FFFFFF;
-    font-weight: 600;
-    border: none;
-    border-radius: 10px;
-    padding: 16px 24px;
-}
-
-.call-to-action-button-seccondary{
-    background-color: #DBF3FF;
-    color: #07075C;
-    font-weight: 600;
+    font-weight: bold;
     border: none;
     border-radius: 10px;
     padding: 16px 24px;
