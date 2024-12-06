@@ -1,0 +1,19 @@
+.testimonials {
+    display: flex;
+    justify-content: center;
+    padding: 42px 212px;
+}
+
+.testimonials .container .testimonials-left {
+    display: flex;
+    flex-direction: column;
+    max-width: 332px;
+    gap: 26px;
+}
+
+.testimonials .container .testimonials-right {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    gap: 26px;
+}
