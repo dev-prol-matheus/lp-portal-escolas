@@ -24,4 +24,24 @@ nav {
     font-weight: bold;
 }
 
+nav .call-to-action-button {
+    width: auto;
+}
 
+.open-menu {
+    display: none;
+}
+
+@media screen and (max-width: 990px) {
+    .nav-wrapper {
+        display: none;
+    }
+
+    .open-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: transparent;
+    }
+}

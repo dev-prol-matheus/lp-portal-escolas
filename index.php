@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prol Educa | Escolas</title>
 
+    <link rel="stylesheet" href="./assets/style/Button.css">
     <link rel="stylesheet" href="./assets/style/AboutUs.css">
     <link rel="stylesheet" href="./assets/style/Advantages.css">
     <link rel="stylesheet" href="./assets/style/Benefits.css">
-    <link rel="stylesheet" href="./assets/style/Button.css">
     <link rel="stylesheet" href="./assets/style/Contact.css">
     <link rel="stylesheet" href="./assets/style/Footer.css">
     <link rel="stylesheet" href="./assets/style/Header.css">
-    <link rel="stylesheet" href="./assets/style/main.css">
     <link rel="stylesheet" href="./assets/style/NavBar.css">
     <link rel="stylesheet" href="./assets/style/Partners.css">
     <link rel="stylesheet" href="./assets/style/Pricing.css">
     <link rel="stylesheet" href="./assets/style/Product.css">
     <link rel="stylesheet" href="./assets/style/Span.css">
     <link rel="stylesheet" href="./assets/style/Testimonials.css">
+    <link rel="stylesheet" href="./assets/style/main.css">
 </head>
 
 <body>
@@ -37,8 +37,27 @@
                 </ul>
                 <button class="call-to-action-button">Call to Action</button>
             </div>
+            <button class="open-menu">
+                <img src="./assets/img/align-justify.svg" alt="Botão para abrir o menu responsivo.">
+            </button>
         </section>
     </nav>
+
+    <!-- <section class="responsive-menu-container">
+        <div class="responsive-menu">
+            <div class="menu-wrapper">
+                <img src="./assets/img/logo.png" alt="Logo Prol Educa" width="120px" height="48px">
+                <ul>
+                    <li><a href="#">O Produto</a></li>
+                    <li><a href="#">Benefícios</a></li>
+                    <li><a href="#">Preços</a></li>
+                    <li><a href="#">Depoimentos</a></li>
+                    <li><a href="#">O Prol Educa</a></li>
+                </ul>
+                <button class="close-menu">Call to Action</button>
+            </div>
+        </div>
+    </section> -->
 
     <header>
         <section class="container">
@@ -50,7 +69,7 @@
                 </div>
                 <div class="header-buttons">
                     <button class="call-to-action-button">Call to Action</button>
-                    <button class="call-to-action-button-seccondary">Call secundário</button>
+                    <button class="call-to-action-button secondary">Call secundário</button>
                 </div>
             </div>
             <div class="right">
@@ -188,11 +207,13 @@
 
     <section class="testimonials">
         <section class="container">
+
             <div class="testimonials-left">
                 <span class="span-title">Depoimentos</span>
                 <h1>Depoimentos dos diretores</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
+
             <div class="testimonials-right">
                 <div class="testimonial">
                     <img src="#" alt="diretor" width="80" height="80">
@@ -225,7 +246,6 @@
                 <h1>Formulário para contato</h1>
                 <p>Estamos disponíveis agora mesmo para te atender. Basta adicionar os dados nos campos abaixo e tirar suas dúvidas.</p>
             </div>
-
             <form class="form-contact">
                 <input type="text" id="nome" name="nome" placeholder="Nome" required>
                 <input type="email" id="email" name="email" placeholder="E-mail" required>

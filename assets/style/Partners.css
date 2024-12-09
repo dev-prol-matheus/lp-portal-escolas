@@ -6,5 +6,8 @@
 
 .partners .container {
     max-width: 1225px;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
 }

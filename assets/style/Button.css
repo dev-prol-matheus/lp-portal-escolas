@@ -5,4 +5,10 @@
     border: none;
     border-radius: 10px;
     padding: 16px 24px;
+    width: 100%;
+}
+
+.call-to-action-button.secondary {
+    background-color: #DBF3FF;
+    color: #07075C;
 }

@@ -1,26 +1,50 @@
 :root{
     --desktop-device: 1224px;
+    --mobile-device: 450px;
+    --tablet-device: 763px;
+    --desktop-device: 1224px;
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-size: 16px;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 h1 {
     color: #190A51;
-    font-size: 40px;
+    font-size: 32px;
+    line-height: 100%;
 }
 
 h2 {
     color: #190A51;
-    font-size: 24px;
+    font-size: 20px;
+    line-height: 100%;
 }
 
 p {
+    font-size: 14px;
     color: #5A5A5A;
+    line-height: 130%;
+}
+
+@media screen and (min-width: 450px) {
+    h1 {
+        font-size: 40px;
+        line-height: 120%;
+    }
+
+    h2 {
+        font-size: 24px;
+        line-height: 120%;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 140%;
+    }
 }
 
 .container {
@@ -32,6 +56,4 @@ p {
     @media screen and (min-width: 1440px) {
         width: var(--desktop-device);
     }
-
-    
 }
