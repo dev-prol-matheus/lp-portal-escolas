@@ -19,9 +19,10 @@ nav {
     gap: 40px;
 }
 
-.nav-wrapper ul li {
+.nav-wrapper ul li a {
     color: #07075C;
     font-weight: bold;
+    text-decoration: none;
 }
 
 nav .call-to-action-button {
