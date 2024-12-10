@@ -30,7 +30,8 @@
 
     <nav>
         <section class="container">
-            <img src="./assets/img/logo.png" alt="Logo Prol Educa" width="120px" height="48px">
+            <!-- <img src="./assets/img/logo.png" alt="Logo Prol Educa" width="120px" height="48px"> -->
+            <img src="./assets/img/proleduca-tech-logo.png" alt="Logo Prol Educa" width="120px">
             <div class="nav-wrapper">
                 <ul>
                     <li><a href="#">O Produto</a></li>
@@ -286,7 +287,8 @@
     <footer>
         <section class="container">
             <div class="footer-left">
-                <img src="./assets/img/logo.png" alt="Prol Educa" width="231" height="92">
+                <!-- <img src="./assets/img/logo.png" alt="Prol Educa" width="231" height="92"> -->
+                <img src="./assets/img/proleduca-tech-logo-branco.png" alt="Prol Educa" width="231">
                 <p>Copyright 2024. Prol Educa Soluções Educacionais</p>
             </div>
             <div class="footer-right">

@@ -18,6 +18,10 @@ footer .container .footer-left img {
     filter: grayscale(100%) brightness(200%);
 }
 
+footer .container .footer-left p {
+    color: #fff;
+}
+
 footer .container .footer-right {
     display: flex;
     flex-wrap: wrap;
