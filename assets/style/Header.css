@@ -6,18 +6,69 @@ header {
 }
 
 header .container {
+    flex-direction: column-reverse;
     align-items: center;
+    gap: 16px;
 }
 
 .container .left {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     gap: 24px;
-    max-width: 575px;
+    width: 100%;
 }
 
 .container .left-wrapper {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.container .header-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+}
+
+.container .right img {
+    display: none;
+}
+
+@media screen and (min-width: 672px) {
+    header .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .container .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: start;
+        gap: 24px;
+        max-width: 575px;
+    }
+
+    .container .header-buttons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container .header-buttons button {
+        width: auto;
+    }
+
+    .container .right img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        max-width: 538px;
+    }
 }

@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prol Educa | Escolas</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/style/Button.css">
     <link rel="stylesheet" href="./assets/style/AboutUs.css">
     <link rel="stylesheet" href="./assets/style/Advantages.css">
     <link rel="stylesheet" href="./assets/style/Benefits.css">
-    <link rel="stylesheet" href="./assets/style/Button.css">
     <link rel="stylesheet" href="./assets/style/Contact.css">
     <link rel="stylesheet" href="./assets/style/Footer.css">
     <link rel="stylesheet" href="./assets/style/Header.css">
-    <link rel="stylesheet" href="./assets/style/main.css">
     <link rel="stylesheet" href="./assets/style/NavBar.css">
     <link rel="stylesheet" href="./assets/style/Partners.css">
     <link rel="stylesheet" href="./assets/style/Pricing.css">
     <link rel="stylesheet" href="./assets/style/Product.css">
     <link rel="stylesheet" href="./assets/style/Span.css">
     <link rel="stylesheet" href="./assets/style/Testimonials.css">
+    <link rel="stylesheet" href="./assets/style/main.css">
 </head>
+
 <body>
 
     <nav>
@@ -27,16 +33,56 @@
             <img src="./assets/img/logo.png" alt="Logo Prol Educa" width="120px" height="48px">
             <div class="nav-wrapper">
                 <ul>
-                    <li><a href=""></a>O Produto</li>
-                    <li><a href=""></a>Benefícios</li>
-                    <li><a href=""></a>Preços</li>
-                    <li><a href=""></a>Depoimentos</li>
-                    <li><a href=""></a>O Prol Educa</li>
+                    <li><a href="#product">O Produto</a></li>
+                    <li><a href="#benefits">Benefícios</a></li>
+                    <li><a href="#pricing">Preços</a></li>
+                    <li><a href="#testimonials">Depoimentos</a></li>
+                    <li><a href="#aboutus">O Prol Educa</a></li>
                 </ul>
                 <button class="call-to-action-button">Call to Action</button>
             </div>
+            <button class="open-menu">
+                <img src="./assets/img/align-justify.svg" alt="Botão para abrir o menu responsivo.">
+            </button>
         </section>
     </nav>
+
+    <script>
+        const openMenuButton = document.querySelector('.open-menu');
+        const navWrapper = document.querySelector('.nav-wrapper');
+        const menuItems = document.querySelectorAll('.nav-wrapper ul li a');
+
+        openMenuButton.addEventListener('click', () => {
+            navWrapper.classList.toggle('open');
+            openMenuButton.classList.toggle('open');
+        });
+
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navWrapper.classList.remove('open');
+                openMenuButton.classList.remove('open');
+            });
+        });
+    </script>
+
+
+
+
+    <!-- <section class="responsive-menu-container">
+        <div class="responsive-menu">
+            <div class="menu-wrapper">
+                <img src="./assets/img/logo.png" alt="Logo Prol Educa" width="120px" height="48px">
+                <ul>
+                    <li><a href="#">O Produto</a></li>
+                    <li><a href="#">Benefícios</a></li>
+                    <li><a href="#">Preços</a></li>
+                    <li><a href="#">Depoimentos</a></li>
+                    <li><a href="#">O Prol Educa</a></li>
+                </ul>
+                <button class="close-menu">Call to Action</button>
+            </div>
+        </div>
+    </section> -->
 
     <header>
         <section class="container">
@@ -48,7 +94,7 @@
                 </div>
                 <div class="header-buttons">
                     <button class="call-to-action-button">Call to Action</button>
-                    <button class="call-to-action-button-seccondary">Call secundário</button>
+                    <button class="call-to-action-button secondary">Call secundário</button>
                 </div>
             </div>
             <div class="right">
@@ -57,7 +103,7 @@
         </section>
     </header>
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
         <section class="container">
             <div class="card">
                 <span>
@@ -80,10 +126,10 @@
         </section>
     </section>
 
-    <section class="product">
+    <section class="product" id="product">
         <section class="container">
-            <span class="span-title">O Produto</span>
             <div class="product-wrapper">
+                <span class="span-title">O Produto</span>
                 <h1>Vídeo de apresentação do produto</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
@@ -92,126 +138,149 @@
                 Seu navegador não suporta o elemento de vídeo.
             </video>
             <button class="call-to-action-button">Call to Action Button</button>
-
         </section>
     </section>
 
-    <section class="benefits">
+    <section class="benefits" id="benefits">
         <section class="container">
             <div class="left-benefits">
                 <img src="./assets/img/foto-diretora.png" alt="Prol Educa" width="648" height="755">
             </div>
             <div class="right-benefits">
-                <span class="span-title">Benefícios</span>
                 <div class="right-wrapper-benefits">
+                    <span class="span-title">Benefícios</span>
                     <h1>Benefícios que os diretores terão ao utilizar o produto</h1>
-                    <div class="content-benefits">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <div class="information-benefit">
-                            <img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">
-                            <div class="benefit-description">
-                                <p class="title-benefit">Benefício ou utilidade do produto</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <div class="information-benefit">
-                            <img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">
-                            <div class="benefit-description">
-                                <p class="title-benefit">Benefício ou utilidade do produto</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <div class="information-benefit">
-                            <img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">
-                            <div class="benefit-description">
-                                <p class="title-benefit">Benefício ou utilidade do produto</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="call-to-action-button">Call to Action Button</button>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
+                <div class="information-benefit">
+                    <img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">
+                    <div class="benefit-description">
+                        <p class="title-benefit">Benefício ou utilidade do produto</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="information-benefit">
+                    <img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">
+                    <div class="benefit-description">
+                        <p class="title-benefit">Benefício ou utilidade do produto</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="information-benefit">
+                    <img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">
+                    <div class="benefit-description">
+                        <p class="title-benefit">Benefício ou utilidade do produto</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <button class="call-to-action-button">Call to Action Button</button>
             </div>
         </section>
     </section>
 
-    <section class="pricing">
+    <section class="pricing" id="pricing">
         <section class="container">
-            <span class="span-title">Precificação</span>
+
             <div class="pricing-wrapper">
+                <span class="span-title">Precificação</span>
                 <h1>Seção de planos ou valores</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
+
             <div class="cards-pricing">
                 <div class="card">
                     <div class="card-wrapper">
-                        <h2>Plano B</h2>
+                        <h2>Plano A</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                     </div>
-                    <ul>
-                        <li>Benefício</li>
-                        <li>Benefício</li>
+                    <ul class="card-list">
+                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Benefício</li>
+                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Benefício</li>
                     </ul>
                     <button class="call-to-action-button">Quero esse plano</button>
                 </div>
-                <div class="card card-seccondary">
+                <div class="card secondary">
                     <div class="card-wrapper">
                         <h2>Plano B</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                     </div>
-                    <ul>
-                        <li>Benefício</li>
-                        <li>Benefício</li>
-                        <li>Benefício</li>
+                    <ul class="card-list">
+                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Benefício</li>
+                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Benefício</li>
+                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Benefício</li>
                     </ul>
-                    <button class="call-to-action-button-seccondary"> Quero esse plano</button>
+                    <button class="call-to-action-button">Quero esse plano</button>
                 </div>
                 <div class="card">
                     <div class="card-wrapper">
-                        <h2>Plano B</h2>
+                        <h2>Plano C</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                     </div>
-                    <ul>
-                        <li>Benefício</li>
-                        <li>Benefício</li>
-                        <li>Benefício</li>
-                        <li>Benefício</li>
-                        <li>Benefício</li>
+                    <ul class="card-list">
+                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Benefício</li>
+                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Benefício</li>
+                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Benefício</li>
+                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Benefício</li>
+                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Benefício</li>
                     </ul>
                     <button class="call-to-action-button">Quero esse plano</button>
                 </div>
+
             </div>
         </section>
     </section>
 
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
         <section class="container">
+
             <div class="testimonials-left">
                 <span class="span-title">Depoimentos</span>
                 <h1>Depoimentos dos diretores</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
+
             <div class="testimonials-right">
-                
+                <div class="testimonial">
+                    <img src="#" alt="diretor" width="80" height="80">
+                    <div class="testimonial-wrapper">
+                        <div class="name-description">
+                            <p>Nome do Diretor</p>
+                            <span>Lorem ipsum dolor sit amet</span>
+                        </div>
+                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <img src="#" alt="diretor" width="80" height="80">
+                    <div class="testimonial-wrapper">
+                        <div class="name-description">
+                            <p>Nome do Diretor</p>
+                            <span>Lorem ipsum dolor sit amet</span>
+                        </div>
+                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+                    </div>
+                </div>
             </div>
         </section>
     </section>
 
     <section class="contact">
         <section class="container">
-            <span class="span-title">Contato</span>
-            <h1>Formulário para contato</h1>
-            <p>Estamos disponíveis agora mesmo para te atender. Basta adicionar os dados nos campos abaixo e tirar suas dúvidas.</p>
-            <form class="form-contact" action="#" method="post">
-                <input type="text" id="nome" name="nome" placeholder="Nome" required><br><br>
-                <input type="email" id="email" name="email" placeholder="E-mail" required><br><br>
-                <input type="text" id="whatsapp" name="whatsapp" placeholder="Whatsapp" required><br><br>
-                <button class="call-to-action-button" type="submit">Entrar em Contato</button>
+            <div class="contact-wrapper">
+                <span class="span-title">Contato</span>
+                <h1>Formulário para contato</h1>
+                <p>Estamos disponíveis agora mesmo para te atender. Basta adicionar os dados nos campos abaixo e tirar suas dúvidas.</p>
+            </div>
+            <form class="form-contact">
+                <input type="text" id="nome" name="nome" placeholder="Nome" required>
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+                <input type="text" id="whatsapp" name="whatsapp" placeholder="Whatsapp" required>
+                <button class="call-to-action-button" type="button">Entrar em Contato</button>
             </form>
         </section>
     </section>
 
-    <section class="aboutus">
+    <section class="aboutus" id="aboutus">
         <section class="container">
             <div class="about-left">
                 <span class="span-title">O Prol Educa</span>
@@ -239,6 +308,7 @@
         <section class="container">
             <div class="footer-left">
                 <img src="./assets/img/logo.png" alt="Prol Educa" width="231" height="92">
+                <!-- <img src="./assets/img/proleduca-tech-logo-branco.png" alt="Prol Educa" width="231"> -->
                 <p>Copyright 2024. Prol Educa Soluções Educacionais</p>
             </div>
             <div class="footer-right">
@@ -260,10 +330,11 @@
                     <a href="#">Lorem Ipsum</a>
                     <a href="#">Lorem Ipsum</a>
                 </div>
-                
+
             </div>
         </section>
     </footer>
 
 </body>
+
 </html>
