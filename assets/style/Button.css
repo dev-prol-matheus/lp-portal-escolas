@@ -3,12 +3,25 @@
     color: #FFFFFF;
     font-weight: bold;
     border: none;
+    cursor: pointer;
     border-radius: 10px;
     padding: 16px 24px;
     width: 100%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.call-to-action-button:hover {
+    background-color: #1a83d1;
+    transform: scale(1.05);
 }
 
 .call-to-action-button.secondary {
     background-color: #DBF3FF;
     color: #07075C;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.call-to-action-button.secondary:hover {
+    background-color: #A8D8FF;
+    transform: scale(1.05);
 }

@@ -1,61 +1,116 @@
 footer {
     display: flex;
     justify-content: center;
-    padding: 97px 0;
+    padding: 60px 0;
     background-color: #07075C;
 }
 
 footer .container {
+    display: flex;
     flex-direction: column;
     gap: 32px;
-}
-
-footer .container .footer-left img {
     width: 100%;
-    max-width: none;
-    object-fit: cover;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+footer .footer-left {
+    text-align: center;
+}
+
+footer .footer-left img {
+    width: 100%;
+    max-width: 230px;
+    object-fit: contain;
     height: auto;
-    filter: grayscale(100%) brightness(200%);
+    filter: grayscale(200%) brightness(200%);
 }
 
-footer .container .footer-left p {
+footer .footer-left p {
     color: #fff;
+    margin-top: 10px;
 }
 
-footer .container .footer-right {
+footer .footer-right {
     display: flex;
     flex-wrap: wrap;
-    gap: 64px;
+    justify-content: space-between;
+    gap: 32px;
+    width: 100%;
 }
 
-footer .container .footer-right .footer-links {
+footer .footer-right .footer-links {
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 100%;
 }
 
-footer .container .footer-right  h2 {
+footer .footer-right h2 {
     color: #FFFFFF;
+    margin-bottom: 10px;
 }
 
-footer .container .footer-right a {
+footer .footer-right a {
     color: #B3B3B3;
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer .footer-right a:hover {
+    color: #fff;
 }
 
 @media screen and (min-width: 500px) {
-    footer .container .footer-left img {
+    footer .container {
+        padding: 0 40px;
+    }
+
+    footer .footer-left img {
         max-width: 230px;
     }
 
-    footer .container .footer-right .footer-links {
-        width: auto;
+    footer .footer-right .footer-links {
+        width: 200px;
     }
 }
 
 @media screen and (min-width: 860px) {
     footer .container {
         flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer .footer-left {
+        text-align: left;
+    }
+
+    footer .footer-right {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 64px;
+    }
+
+    footer .footer-right .footer-links {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    footer .container {
+        padding: 0 10px;
+    }
+
+    footer .footer-left img {
+        max-width: 200px;
+    }
+
+    footer .footer-right {
+        justify-content: center;
+    }
+
+    footer .footer-right .footer-links {
+        width: 100%;
+        text-align: center;
     }
 }

@@ -31,14 +31,13 @@
     <nav>
         <section class="container">
             <img src="./assets/img/logo.png" alt="Logo Prol Educa" width="120px" height="48px">
-            <!-- <img src="./assets/img/proleduca-tech-logo.png" alt="Logo Prol Educa" width="120px"> -->
             <div class="nav-wrapper">
                 <ul>
-                    <li><a href="#">O Produto</a></li>
-                    <li><a href="#">Benefícios</a></li>
-                    <li><a href="#">Preços</a></li>
-                    <li><a href="#">Depoimentos</a></li>
-                    <li><a href="#">O Prol Educa</a></li>
+                    <li><a href="#product">O Produto</a></li>
+                    <li><a href="#benefits">Benefícios</a></li>
+                    <li><a href="#pricing">Preços</a></li>
+                    <li><a href="#testimonials">Depoimentos</a></li>
+                    <li><a href="#aboutus">O Prol Educa</a></li>
                 </ul>
                 <button class="call-to-action-button">Call to Action</button>
             </div>
@@ -47,6 +46,27 @@
             </button>
         </section>
     </nav>
+
+    <script>
+        const openMenuButton = document.querySelector('.open-menu');
+        const navWrapper = document.querySelector('.nav-wrapper');
+        const menuItems = document.querySelectorAll('.nav-wrapper ul li a');
+
+        openMenuButton.addEventListener('click', () => {
+            navWrapper.classList.toggle('open');
+            openMenuButton.classList.toggle('open');
+        });
+
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navWrapper.classList.remove('open');
+                openMenuButton.classList.remove('open');
+            });
+        });
+    </script>
+
+
+
 
     <!-- <section class="responsive-menu-container">
         <div class="responsive-menu">
@@ -83,7 +103,7 @@
         </section>
     </header>
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
         <section class="container">
             <div class="card">
                 <span>
@@ -106,7 +126,7 @@
         </section>
     </section>
 
-    <section class="product">
+    <section class="product" id="product">
         <section class="container">
             <div class="product-wrapper">
                 <span class="span-title">O Produto</span>
@@ -121,7 +141,7 @@
         </section>
     </section>
 
-    <section class="benefits">
+    <section class="benefits" id="benefits">
         <section class="container">
             <div class="left-benefits">
                 <img src="./assets/img/foto-diretora.png" alt="Prol Educa" width="648" height="755">
@@ -158,7 +178,7 @@
         </section>
     </section>
 
-    <section class="pricing">
+    <section class="pricing" id="pricing">
         <section class="container">
 
             <div class="pricing-wrapper">
@@ -210,7 +230,7 @@
         </section>
     </section>
 
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
         <section class="container">
 
             <div class="testimonials-left">
@@ -260,7 +280,7 @@
         </section>
     </section>
 
-    <section class="aboutus">
+    <section class="aboutus" id="aboutus">
         <section class="container">
             <div class="about-left">
                 <span class="span-title">O Prol Educa</span>
