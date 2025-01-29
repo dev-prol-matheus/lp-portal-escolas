@@ -103,7 +103,7 @@
         </section>
     </header>
 
-    <section class="advantages" id="advantages">
+    <section class="advantages">
         <section class="container">
             <div class="card">
                 <span>
