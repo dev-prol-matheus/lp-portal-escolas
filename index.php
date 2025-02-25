@@ -253,7 +253,7 @@
                         <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Atualização contínua do design do portal, garantindo uma experiência visual sempre moderna e otimizada;</strong></li>
                         <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Suporte 24h por Chamado e Chat;</strong></li>
                     </ul>
-                    <button class="call-to-action-button">Quero esse plano</button>
+                    <button class="call-to-action-button">Quero esse plano </button>
                 </div>
 
             </div>
@@ -270,24 +270,15 @@
             </div>
 
             <div class="testimonials-right">
+                
                 <div class="testimonial">
-                    <img src="#" alt="diretor" width="80" height="80">
+                    <img src="assets/img/talita-diretora-israel.jpg" alt="diretor" width="80" height="80">
                     <div class="testimonial-wrapper">
                         <div class="name-description">
-                            <p>Nome do Diretor</p>
-                            <span>Lorem ipsum dolor sit amet</span>
+                            <p>Talita - Diretora</p>
+                            <span>Escola de Enfermagem Israel</span>
                         </div>
-                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <img src="#" alt="diretor" width="80" height="80">
-                    <div class="testimonial-wrapper">
-                        <div class="name-description">
-                            <p>Nome do Diretor</p>
-                            <span>Lorem ipsum dolor sit amet</span>
-                        </div>
-                        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</p>
+                        <p>“Assim que começamos a usar o portal do Prol Educa, percebi que poderia administrar o site de forma completa. A cada mês, estamos recebendo mais acessos e cadastros, e consigo gerenciar tudo de maneira simples, o que nos dá uma grande autonomia. Além disso, o suporte é rápido e sempre acessível.”</p>
                     </div>
                 </div>
             </div>
@@ -298,14 +289,15 @@
         <section class="container">
             <div class="contact-wrapper">
                 <span class="span-title">Contato</span>
-                <h1>Formulário para contato</h1>
-                <p>Estamos disponíveis agora mesmo para te atender. Basta adicionar os dados nos campos abaixo e tirar suas dúvidas.</p>
+                <h1>Gostaria de agendar uma reunião?</h1>
+                <p>Quer saber como nosso portal de captação de alunos pode ajudar sua instituição? Agende uma reunião e descubra como aumentar suas matrículas de forma simples e eficaz.</p>
             </div>
             <form class="form-contact">
                 <input type="text" id="nome" name="nome" placeholder="Nome" required>
                 <input type="email" id="email" name="email" placeholder="E-mail" required>
                 <input type="text" id="whatsapp" name="whatsapp" placeholder="Whatsapp" required>
-                <button class="call-to-action-button" type="button">Entrar em Contato</button>
+                <input type="date" id="whatsapp" name="whatsapp" placeholder="Whatsapp" required>
+                <button class="call-to-action-button" type="button">Marcar Reunião</button>
             </form>
         </section>
     </section>
@@ -315,7 +307,11 @@
             <div class="about-left">
                 <span class="span-title">O Prol Educa</span>
                 <h1>Conheça o Prol Educa</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p> Somos uma Startup Pernambucana que trabalha em Prol da educação.
+
+"Ajudamos famílias que sonham em matricular seus filhos e não teriam condições de arcar com as mensalidades integrais nas instituições de ensino privadas".
+
+Já conseguimos impactar mais de 20 mil famílias beneficiadas com as bolsas de estudos de até 80% de desconto, em escolas, faculdades, cursos técnicos e cursos de idiomas.</p>
             </div>
             <div class="about-right">
                 <img src="./assets/img/proleduca.png" alt="Prol Educa" width="600" height="373">
