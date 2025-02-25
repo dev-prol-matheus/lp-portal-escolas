@@ -62,20 +62,21 @@
     color: #fff;
 }
 
-.pricing .container .cards-pricing .card .card-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    height: 256px;
-}
-
 .pricing .container .cards-pricing .card .card-list li {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     gap: 8px;
+}
+
+.pricing .container .cards-pricing .card .card-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: auto; /* Permite que o card cresça para baixo */
+
 }
 
 @media screen and (min-width: 890px) {
