@@ -39,7 +39,8 @@
     max-width: 807px;
 }
 
-.product .container .call-to-action-button {
-    border-radius: 16px;
-    width: auto;
+@media screen and (max-width: 550px) {
+    .product button {
+        width: 100%;
+    }
 }

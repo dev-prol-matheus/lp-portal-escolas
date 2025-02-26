@@ -8,7 +8,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9d26e4abf2.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./assets/style/Button.css">
@@ -40,7 +40,10 @@
                     <li><a href="#testimonials">Depoimentos</a></li>
                     <li><a href="#aboutus">O Prol Educa</a></li>
                 </ul>
-                <button class="call-to-action-button"><i class="fa-brands fa-whatsapp"></i>  Fale Conosco</button>
+                <button class="call-to-action-button">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Fale Conosco
+                </button>
             </div>
             <button class="open-menu">
                 <img src="./assets/img/align-justify.svg" alt="Botão para abrir o menu responsivo.">
@@ -48,26 +51,23 @@
         </section>
     </nav>
 
-    <script>
-        const openMenuButton = document.querySelector('.open-menu');
-        const navWrapper = document.querySelector('.nav-wrapper');
-        const menuItems = document.querySelectorAll('.nav-wrapper ul li a');
+    <script type="text/javascript">
+        const openMenuButton = document.querySelector(".open-menu");
+        const navWrapper = document.querySelector(".nav-wrapper");
+        const menuItems = document.querySelectorAll(".nav-wrapper ul li a");
 
-        openMenuButton.addEventListener('click', () => {
-            navWrapper.classList.toggle('open');
-            openMenuButton.classList.toggle('open');
+        openMenuButton.addEventListener("click", () => {
+            navWrapper.classList.toggle("open");
+            openMenuButton.classList.toggle("open");
         });
 
         menuItems.forEach(item => {
-            item.addEventListener('click', () => {
-                navWrapper.classList.remove('open');
-                openMenuButton.classList.remove('open');
+            item.addEventListener("click", () => {
+                navWrapper.classList.remove("open");
+                openMenuButton.classList.remove("open");
             });
         });
     </script>
-
-
-
 
     <!-- <section class="responsive-menu-container">
         <div class="responsive-menu">
@@ -95,7 +95,9 @@
                 </div>
                 <div class="header-buttons">
                     <button class="call-to-action-button"><i class="fa-brands fa-whatsapp"></i> Fale Conosco</button>
-                    <a href="#product"><button class="call-to-action-button secondary"><i class="fa-solid fa-plus"></i> Conhecer mais</button></a>
+                    <a href="#product">
+                        <button class="call-to-action-button secondary"><i class="fa-solid fa-plus"></i> Conhecer mais</button>
+                    </a>
                 </div>
             </div>
             <div class="right">
@@ -157,7 +159,8 @@
                     <img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">
                     <div class="benefit-description">
                         <p class="title-benefit">Aumente suas matrículas pela internet em até 5 vezes</p>
-                        <p>Nosso portal é especializado em captação de alunos, reunindo as estratégias de sucesso que usamos para levar estudantes às escolas. Com ele, compartilhamos nossa expertise diretamente com as instituições, permitindo que elas mesmas realizem a captação de alunos de forma prática, eficaz e com resultados comprovados."</p></div>
+                        <p>Nosso portal é especializado em captação de alunos, reunindo as estratégias de sucesso que usamos para levar estudantes às escolas. Com ele, compartilhamos nossa expertise diretamente com as instituições, permitindo que elas mesmas realizem a captação de alunos de forma prática, eficaz e com resultados comprovados."</p>
+                    </div>
                 </div>
                 <div class="information-benefit">
                     <img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">
@@ -173,7 +176,7 @@
                         <p>Utilizamos estratégias de SEO para garantir que sua instituição seja facilmente encontrada nos principais buscadores, como Google e Bing, posicionando-a entre as primeiras pesquisas da sua região com melhorias contínuas para manter sua presença online otimizada."</p>
                     </div>
                 </div>
-                <button class="call-to-action-button"><i class="fa-solid fa-file-pdf"></i> Baixar  para ver todos os Benefícios</button>
+                <button class="call-to-action-button"><i class="fa-solid fa-file-pdf"></i> Baixar para ver todos os Benefícios</button>
             </div>
         </section>
     </section>
@@ -191,69 +194,74 @@
 
             <div class="cards-pricing">
                 <div class="card">
-                    <div class="card-wrapper">
-                        <h2>Plano Prata</h2>
-                        <h1>R$ 199/mês</h1>
-                        <p>Ideal para quem está começando a otimizar a captação de alunos.</p>
+                    <div class="card-list-header">
+                        <div class="card-wrapper">
+                            <h2>Plano Prata</h2>
+                            <h1>R$ 199/mês</h1>
+                            <p>Ideal para quem está começando a otimizar a captação de alunos.</p>
+                        </div>
+                        <ul class="card-list">
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Design sofisticado;</li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Cadastros nas turmas on-line;</li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Cadastro de Blog;</li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Alteração de Slides;</li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Otimização SEO;</li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Envio de e-mails de aviso de cadastros;</li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Hospedagem e domínio inclusos no pacote;</li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Suporte 24h por Chamado;</li>
+                        </ul>
                     </div>
-                    <ul class="card-list">
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Desing sofisticado;</li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Cadastros nas turmas on-line;</li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Cadastro de Blog;</li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Alteração de Slides;</li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Otimização SEO;</li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Envio de e-mails de aviso de cadastros;</li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Hospedagem e domínio inclusos no pacote;</li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Suporte 24h por Chamado;</li>
-
-                    </ul>
                     <button class="call-to-action-button">Quero esse plano</button>
                 </div>
                 <div class="card secondary">
-                    <div class="card-wrapper">
-                        <h2>Plano Ouro</h2>
-                        <h1>R$ 249/mês</h1>
-                        <p>Com funcionalidades avançadas para um desempenho ainda mais eficaz.</p>
+                    <div class="card-list-header">
+                        <div class="card-wrapper">
+                            <h2>Plano Ouro</h2>
+                            <h1>R$ 249/mês</h1>
+                            <p>Com funcionalidades avançadas para um desempenho ainda mais eficaz.</p>
+                        </div>
+                        <ul class="card-list">
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Design sofisticado;</li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Cadastros nas turmas on-line;</li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Cadastro de Blog;</li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Alteração de Slides;</li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Hospedagem e domínio inclusos no pacote;</li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Integração com o WhatsApp da instituição;</strong></li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Envio de e-mails de aviso de cadastros;</li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Envio de mensagem pelo WhatsApp de aviso de cadastros;</strong></li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Otimização contínua de SEO;</strong></li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Atualização contínua do design do portal, garantindo uma experiência visual sempre moderna e otimizada;</strong></li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Suporte 24h por Chamado e Chat;</strong></li>
+                        </ul>
                     </div>
-                    <ul class="card-list">
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Desing sofisticado;</li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Cadastros nas turmas on-line;</li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Cadastro de Blog;</li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Alteração de Slides;</li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Hospedagem e domínio inclusos no pacote;</li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Integração com o WhatsApp da instituição;</strong></li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Envio de e-mails de aviso de cadastros;</li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Envio de mensagem pelo WhatsApp de aviso de cadastros;</strong></li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Otimização contínua de SEO;</strong></li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Atualização contínua do design do portal, garantindo uma experiência visual sempre moderna e otimizada;</strong></li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Suporte 24h por Chamado e Chat;</strong></li>
-                    </ul>
                     <button class="call-to-action-button">Quero esse plano</button>
                 </div>
                 <div class="card">
-                    <div class="card-wrapper">
-                        <h2>Plano Platina - <i class="fa-solid fa-brain"></i></h2>
-                        <h1>R$ 389/mês</h1>
-                        <p>Nosso pacote completo, oferecendo todas as ferramentas e suporte para resultados excepcionais.</p>
+                    <div class="card-list-header">
+                        <div class="card-wrapper">
+                            <h2>Plano Platina</h2>
+                            <h1>R$ 389/mês</h1>
+                            <p>Nosso pacote completo, oferecendo todas as ferramentas e suporte para resultados excepcionais.</p>
+                        </div>
+                        <ul class="card-list">
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Design sofisticado;</li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Cadastros nas turmas on-line;</li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Cadastro de Blog;</li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Alteração de Slides;</li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Mapa de Calor;</strong></li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Hospedagem e domínio inclusos no pacote;</li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Integração com o WhatsApp da instituição;</strong></li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Envio de e-mails de aviso de cadastros;</li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Envio de mensagem pelo WhatsApp de aviso de cadastros;</strong></li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Otimização contínua de SEO;</strong></li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Atendente virtual com IA via WhatsApp, treinada especificamente para atender às necessidades da sua instituição, oferecendo um suporte eficiente e personalizado.
+                                </strong></li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Consultoria de Blog para melhorar SEO;</strong></li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Atualização contínua do design do portal, garantindo uma experiência visual sempre moderna e otimizada;</strong></li>
+                            <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Suporte 24h por Chamado e Chat;</strong></li>
+                        </ul>
                     </div>
-                    <ul class="card-list">
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Desing sofisticado;</li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Cadastros nas turmas on-line;</li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Cadastro de Blog;</li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Alteração de Slides;</li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong><u>Mapa de Calor;</u></strong></li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Hospedagem e domínio inclusos no pacote;</li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Integração com o WhatsApp da instituição;</strong></li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Envio de e-mails de aviso de cadastros;</li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Envio de mensagem pelo WhatsApp de aviso de cadastros;</strong></li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Otimização contínua de SEO;</strong></li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong><u>Atendente virtual com IA via WhatsApp, treinada especificamente para atender às necessidades da sua instituição, oferecendo um suporte eficiente e personalizado.</u>
-                        </strong></li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong><u>Consultoria de Blog para melhorar SEO;</u></strong></li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Atualização contínua do design do portal, garantindo uma experiência visual sempre moderna e otimizada;</strong></li>
-                        <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Suporte 24h por Chamado e Chat;</strong></li>
-                    </ul>
-                    <button class="call-to-action-button">Quero esse plano </button>
+                    <button class="call-to-action-button">Quero esse plano</button>
                 </div>
 
             </div>
@@ -262,15 +270,12 @@
 
     <section class="testimonials" id="testimonials">
         <section class="container">
-
             <div class="testimonials-left">
                 <span class="span-title">Depoimentos</span>
                 <h1>Depoimentos das instituições</h1>
                 <p>Confira os depoimentos de nossos clientes sobre o portal e como ele tem transformado a captação de alunos em suas instituições.</p>
             </div>
-
             <div class="testimonials-right">
-                
                 <div class="testimonial">
                     <img src="assets/img/talita-diretora-israel.jpg" alt="diretor" width="80" height="80">
                     <div class="testimonial-wrapper">
@@ -309,9 +314,9 @@
                 <h1>Conheça o Prol Educa</h1>
                 <p> Somos uma Startup Pernambucana que trabalha em Prol da educação.
 
-"Ajudamos famílias que sonham em matricular seus filhos e não teriam condições de arcar com as mensalidades integrais nas instituições de ensino privadas".
+                    "Ajudamos famílias que sonham em matricular seus filhos e não teriam condições de arcar com as mensalidades integrais nas instituições de ensino privadas".
 
-Já conseguimos impactar mais de 20 mil famílias beneficiadas com as bolsas de estudos de até 80% de desconto, em escolas, faculdades, cursos técnicos e cursos de idiomas.</p>
+                    Já conseguimos impactar mais de 20 mil famílias beneficiadas com as bolsas de estudos de até 80% de desconto, em escolas, faculdades, cursos técnicos e cursos de idiomas.</p>
             </div>
             <div class="about-right">
                 <img src="./assets/img/proleduca.png" alt="Prol Educa" width="600" height="373">
@@ -321,10 +326,11 @@ Já conseguimos impactar mais de 20 mil famílias beneficiadas com as bolsas de 
 
     <section class="partners">
         <section class="container">
+            <img src="./assets/img/google_for_startups.png" alt="Google for Startups" width="105" height="92">
             <img src="./assets/img/ambevvoa.png" alt="Ambev VOA" width="132" height="46">
             <img src="./assets/img/bndes.png" alt="BNDES" width="163" height="78">
             <img src="./assets/img/estacaohack.png" alt="Estação Hack" width="162" height="38">
-            <img src="./assets/img/startupne.png" alt="Startup NE" width="132" height="75">
+            <!-- <img src="./assets/img/startupne.png" alt="Startup NE" width="132" height="75"> -->
             <img src="./assets/img/td_impacta.png" alt="TD Impacta" width="164" height="26">
             <img src="./assets/img/vumborastartups.png" alt="Vum Bora Startup" width="132" height="67">
         </section>
@@ -337,7 +343,7 @@ Já conseguimos impactar mais de 20 mil famílias beneficiadas com as bolsas de 
                 <!-- <img src="./assets/img/proleduca-tech-logo-branco.png" alt="Prol Educa" width="231"> -->
                 <p>Copyright 2025. Prol Educa Soluções Educacionais</p>
             </div>
-            <div class="footer-right">
+            <!-- <div class="footer-right">
                 <div class="footer-links">
                     <h2>Links do Footer</h2>
                     <a href="#">Lorem Ipsum</a>
@@ -356,8 +362,7 @@ Já conseguimos impactar mais de 20 mil famílias beneficiadas com as bolsas de 
                     <a href="#">Lorem Ipsum</a>
                     <a href="#">Lorem Ipsum</a>
                 </div>
-
-            </div>
+            </div> -->
         </section>
     </footer>
 

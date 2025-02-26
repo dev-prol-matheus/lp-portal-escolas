@@ -1,7 +1,7 @@
 .pricing {
     display: flex;
     justify-content: center;
-    background-color: #e9e9e9;
+    background-color: #f4f4f4;
     padding: 91px 0;
 }
 
@@ -43,18 +43,22 @@
 
 .pricing .container .cards-pricing .card.secondary {
     color: #fff;
-    background-color: #2195F2;
+    background-color: #07075c;
 }
 
 .pricing .container .cards-pricing .card.secondary button {
-    color: #2195F2;
-    background-color: #FFF;
+    color: #07075c;
+    background-color: #fff;
 }
 
 .pricing .container .cards-pricing .card .card-wrapper {
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+.pricing .container .cards-pricing .card.secondary .card-wrapper h1 {
+    color: #fff;
 }
 
 .pricing .container .cards-pricing .card.secondary .card-wrapper h2,
@@ -65,7 +69,6 @@
 .pricing .container .cards-pricing .card .card-list li {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
     gap: 8px;
 }
@@ -76,7 +79,13 @@
     flex-direction: column;
     gap: 32px;
     height: auto; /* Permite que o card cresça para baixo */
+}
 
+.pricing .container .cards-pricing .card .card-list-header {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 32px;
 }
 
 @media screen and (min-width: 890px) {
@@ -84,6 +93,13 @@
         flex-direction: row;
         gap: 24px;
     }
+
+    /* .pricing .container .cards-pricing .card .card-list-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 8px;
+    } */
 
     .pricing .container .cards-pricing .card {
         display: flex;

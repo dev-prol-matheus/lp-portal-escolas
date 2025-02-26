@@ -11,3 +11,11 @@
     flex-wrap: wrap;
     gap: 32px;
 }
+
+@media screen and (max-width: 420px) {
+    .partners .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,13 +1,23 @@
 .advantages {
     display: flex;
     justify-content: center;
-    padding: 24px 0;
+    padding: 24px 0 54px;
 }
 
 .advantages .container {
-    justify-content: center;
+    /* justify-content: space-between;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 8px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 24px;
+}
+
+@media screen and (max-width: 340px) {
+    .advantages .container {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .advantages .container .card {
@@ -27,6 +37,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    /* flex-grow: unset; */
+    aspect-ratio: 1;
 }
 
 .advantages .container .card h2 {
@@ -36,7 +48,7 @@
 
 @media screen and (min-width: 680px) {
     .advantages .container .card {
-        width: 392px;
+        /* width: 392px; */
         gap: 24px;
         padding: 32px;
     }

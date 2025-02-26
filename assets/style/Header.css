@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 24px 0;
+    padding: 116px 0 32px;
 }
 
 header .container {
@@ -34,7 +34,15 @@ header .container {
     align-items: flex-start;
     gap: 8px;
     width: 100%;
-    
+}
+
+.container .header-buttons a {
+    text-decoration: none;
+}
+
+.container .header-buttons button,
+.container .header-buttons a {
+    width: 100%;
 }
 
 .container .right img {
@@ -62,7 +70,8 @@ header .container {
         flex-direction: row;
     }
 
-    .container .header-buttons button {
+    .container .header-buttons button,
+    .container .header-buttons a {
         width: auto;
     }
 

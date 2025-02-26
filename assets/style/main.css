@@ -10,24 +10,22 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Instrument Sans', sans-serif;
 }
 
 h1 {
     color: #190A51;
     font-size: 32px;
-    line-height: 100%;
 }
 
 h2 {
     color: #190A51;
     font-size: 20px;
-    line-height: 100%;
 }
 
 p {
     font-size: 14px;
-    color: #5A5A5A;
+    color: #696969;
     line-height: 130%;
 }
 
@@ -56,5 +54,16 @@ p {
 
     @media screen and (min-width: 1440px) {
         width: var(--desktop-device);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .pricing,
+    .benefits,
+    .partners,
+    .testimonials,
+    .contact,
+    .aboutus {
+        padding: 40px 0;
     }
 }
