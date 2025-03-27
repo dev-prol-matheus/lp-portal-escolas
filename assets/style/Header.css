@@ -1,19 +1,14 @@
 header {
-    display: flex;
-    justify-content: center;
     width: 100%;
     padding: 116px 0 32px;
 }
 
 header .container {
-    flex-direction: column-reverse;
     align-items: center;
     gap: 16px;
 }
 
 .container .left {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -22,15 +17,10 @@ header .container {
 }
 
 .container .left-wrapper {
-    display: flex;
-    flex-direction: column;
     gap: 16px;
 }
 
 .container .header-buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
     align-items: flex-start;
     gap: 8px;
     width: 100%;
@@ -68,6 +58,39 @@ header .container {
     .container .header-buttons {
         display: flex;
         flex-direction: row;
+    }
+
+    .container .header-buttons button,
+    .container .header-buttons a {
+        width: auto;
+    }
+
+    .container .right img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        max-width: 538px;
+    }
+}
+@media screen and (max-width: 672px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: start;
+        gap: 24px;
+        max-width: 575px;
+    }
+
+    .container .header-buttons {
+        display: flex;
+        flex-direction: column;
     }
 
     .container .header-buttons button,

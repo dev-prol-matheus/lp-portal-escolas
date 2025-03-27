@@ -1,0 +1,18 @@
+[28-Feb-2025 19:41:53 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'port_escolas_v1.turnos' doesn't exist in /home/i0wridfl/public_html/demonstracao/api/models/CursosModel.php:126
+Stack trace:
+#0 /home/i0wridfl/public_html/demonstracao/api/models/CursosModel.php(126): PDO->query('SELECT c.*, s.d...')
+#1 /home/i0wridfl/public_html/demonstracao/api/controllers/cursos.php(100): CursosModel->ler_todos_home()
+#2 {main}
+  thrown in /home/i0wridfl/public_html/demonstracao/api/models/CursosModel.php on line 126
+[28-Feb-2025 19:41:54 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'port_escolas_v1.turnos' doesn't exist in /home/i0wridfl/public_html/demonstracao/api/models/CursosModel.php:126
+Stack trace:
+#0 /home/i0wridfl/public_html/demonstracao/api/models/CursosModel.php(126): PDO->query('SELECT c.*, s.d...')
+#1 /home/i0wridfl/public_html/demonstracao/api/controllers/cursos.php(100): CursosModel->ler_todos_home()
+#2 {main}
+  thrown in /home/i0wridfl/public_html/demonstracao/api/models/CursosModel.php on line 126
+[28-Feb-2025 19:42:22 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'port_escolas_v1.turnos' doesn't exist in /home/i0wridfl/public_html/demonstracao/api/models/CursosModel.php:126
+Stack trace:
+#0 /home/i0wridfl/public_html/demonstracao/api/models/CursosModel.php(126): PDO->query('SELECT c.*, s.d...')
+#1 /home/i0wridfl/public_html/demonstracao/api/controllers/cursos.php(100): CursosModel->ler_todos_home()
+#2 {main}
+  thrown in /home/i0wridfl/public_html/demonstracao/api/models/CursosModel.php on line 126
