@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    color: #444;
+    text-align: center;
+    font-size: 30px;
+}
+
+.mensagem {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.sucesso {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.erro {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.form_bnt {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    background-color: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #0368d4;
+    color: rgb(247, 247, 247);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.img-banner {
+    max-width: 350px;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.form_principal {
+    background-color: #f4f4f4;
+    border: none;
+}
+.btn-p{
+    border: none !important;
+    padding: 7px 5px 8px;
+    border-radius: 7px;
+    margin: 5px;
+    margin-top: 5px;
+}
+
+.btn-p:hover {
+    background-color: #ffbd39 !important;
+}
+
+@media screen and (max-width: 1205px) {
+    .btn .btn-danger {
+        width: 70% !important;
+    }
+}

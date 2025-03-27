@@ -1,15 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-<head>
-    <meta charset="UTF-8">
+<head><meta charset="utf-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prol Educa | Escolas</title>
+   
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/9d26e4abf2.js" crossorigin="anonymous"></script>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" as="style">
+    <script src="https://kit.fontawesome.com/9d26e4abf2.js" crossorigin="anonymous" defer></script>
+   
+    <meta name="author" content="Prol Educa Tech">
+    
+    <link rel="canonical" href="https://portalparaescolas.com.br/">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Portal para escolas que oferece soluções inteligentes para captação de alunos. Com nosso sistema de inscrição online, escolas podem aumentar a matrícula de forma eficiente e prática. Simplifique sua gestão escolar e maximize a captação de estudantes com nossa plataforma.">
+    <meta name="keywords" content="portal para escolas, captação de alunos, sistema de inscrição online, matrícula escolar, aumento de captação de estudantes, plataforma de matrícula online, gestão de inscrições escolares, software para escolas, solução de matrícula digital">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Portal de Captação de Alunos para Escolas | Matrículas Online">
+    <meta name="twitter:description" content="Portal para escolas especializado em captar alunos, oferecendo um sistema de inscrição online para facilitar a matrícula e aumentar a captação de estudantes.">
+    <meta name="twitter:image" content="https://portalparaescolas.com.br/assets/img/proleduca-tech.png">
+    <meta name="twitter:url" content="https://portalparaescolas.com.br/">
+
+    <meta property="og:title" content="Portal de Captação de Alunos para Escolas | Matrículas Online">
+    <meta property="og:description" content="Portal para escolas especializado em captar alunos, oferecendo um sistema de inscrição online para facilitar a matrícula e aumentar a captação de estudantes.">
+    <meta property="og:image" content="https://portalparaescolas.com.br/assets/img/proleduca-tech.png">
+    <meta property="og:url" content="https://portalparaescolas.com.br/">
+    <meta property="og:type" content="website">
+
+
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+
+
+    <link rel="alternate" href="https://portalparaescolas.com.br/" hreflang="pt-BR">
+
+
+    <title>Aumente suas Matrículas Online | Portal de Captação de Alunos para Escolas</title>
+
+    <script type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Prol Educa Tech",
+        "url": "https://portalparaescolas.com.br/",
+        "logo": "https://portalparaescolas.com.br/assets/img/proleduca-tech.png",
+        "sameAs": [
+            "https://www.facebook.com/proleduca",
+            "https://www.instagram.com/proleduca"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+55-81-99785-8849",
+            "contactType": "Customer Service",
+            "areaServed": "BR",
+            "availableLanguage": "Portuguese"
+        }
+        }
+    </script>
+
 
     <link rel="stylesheet" href="./assets/style/Button.css">
     <link rel="stylesheet" href="./assets/style/AboutUs.css">
@@ -31,7 +81,8 @@
 
     <nav>
         <section class="container">
-            <img src="./assets/img/proleduca-tech.png" href="index.php" alt="Logo Prol Educa" width="120px" height="48px">
+        <img src="./assets/img/proleduca-tech.png" href="index.php" alt="Logo da Prol Educa, plataforma de captação de alunos e matrículas online para escolas" width="120px" height="48px">
+
             <div class="nav-wrapper">
                 <ul>
                     <li><a href="#product">O Portal das Escolas</a></li>
@@ -40,10 +91,12 @@
                     <li><a href="#testimonials">Depoimentos</a></li>
                     <li><a href="#aboutus">O Prol Educa</a></li>
                 </ul>
-                <button class="call-to-action-button">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    Fale Conosco
-                </button>
+                <a href="https://wa.me/5581997858849?text=Ol%C3%A1%2C%20preciso%20saber%20mais%20sobre%20o%20portal%20de%20capta%C3%A7%C3%A3o%20de%20alunos." target="_blank" style="text-decoration: none;">
+                    <button class="call-to-action-button">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        Fale Conosco
+                    </button>
+                </a>
             </div>
             <button class="open-menu">
                 <img src="./assets/img/align-justify.svg" alt="Botão para abrir o menu responsivo.">
@@ -94,14 +147,19 @@
                     <p>Transforme visitas em matrículas e potencialize suas vendas com um portal estratégico e impactante. Ao otimizar sua presença digital, você atrai novos alunos, converte interesse em matrícula e cria uma experiência que impulsiona os resultados da sua instituição, gerando mais conversões e garantindo crescimento.</p>
                 </div>
                 <div class="header-buttons">
-                    <button class="call-to-action-button"><i class="fa-brands fa-whatsapp"></i> Fale Conosco</button>
-                    <a href="#product">
+                    <a href="https://wa.me/5581997858849?text=Ol%C3%A1%2C%20preciso%20saber%20mais%20sobre%20o%20portal%20de%20capta%C3%A7%C3%A3o%20de%20alunos." target="_blank" style="text-decoration: none;">
+                        <button class="call-to-action-button">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            Fale Conosco
+                        </button>
+                    </a>
+                    <a href="#benefits">
                         <button class="call-to-action-button secondary"><i class="fa-solid fa-plus"></i> Conhecer mais</button>
                     </a>
                 </div>
             </div>
             <div class="right">
-                <img src="./assets/img/portal-para-escolas-captacao-de-alunos.png" alt="Foto do Diretor Prol Educa">
+            <img src="./assets/img/portal-para-escolas-captacao-de-alunos.png" alt="Imagem ilustrativa do portal Prol Educa, que facilita a captação de alunos para escolas" width="600" height="400">
             </div>
         </section>
     </header>
@@ -137,12 +195,13 @@
                 <p>Nosso portal facilita a captação de alunos, oferecendo ferramentas eficientes para aumentar sua visibilidade e atrair mais estudantes.</p>
             </div>
             <video width="807" height="441" controls>
-                <source src="#" type="video/mp4">
+                <source src="assets/video/PROL EDUCA - Projeto SAAS (V2).mp4" type="video/mp4">
                 Seu navegador não suporta o elemento de vídeo.
             </video>
             <button class="call-to-action-button"><i class="fa-solid fa-eye"></i> Demostração do Portal</button>
         </section>
     </section>
+    
 
     <section class="benefits" id="benefits">
         <section class="container">
@@ -156,21 +215,21 @@
                     <p>No Prol Educa, somos especializados em captar alunos online. Criamos um portal exclusivo para escolas, com o objetivo de aumentar as matrículas e otimizar a captação de novos alunos de forma prática e eficiente.</p>
                 </div>
                 <div class="information-benefit">
-                    <img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">
+                    <img src="./assets/img/check.svg" alt="Ícone de gráfico, representando a administração eficiente das inscrições e matrículas online" width="24" height="24">
                     <div class="benefit-description">
                         <p class="title-benefit">Aumente suas matrículas pela internet em até 5 vezes</p>
                         <p>Nosso portal é especializado em captação de alunos, reunindo as estratégias de sucesso que usamos para levar estudantes às escolas. Com ele, compartilhamos nossa expertise diretamente com as instituições, permitindo que elas mesmas realizem a captação de alunos de forma prática, eficaz e com resultados comprovados."</p>
                     </div>
                 </div>
                 <div class="information-benefit">
-                    <img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">
+                    <img src="./assets/img/check.svg" aalt="Ícone representando aumento de matrículas com a Prol Educa" width="24" height="24">
                     <div class="benefit-description">
                         <p class="title-benefit">Portal Administrável</p>
                         <p>Nosso portal é totalmente administrável, permitindo ajustes fáceis. Você pode alterar slides, editar cursos e anos (ex: 1º Ano do Fundamental - Tarde), gerenciar cadastros e o blog de forma simples e intuitiva, além de contar com várias funcionalidades para facilitar o seu dia a dia.</p>
                     </div>
                 </div>
                 <div class="information-benefit">
-                    <img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">
+                    <img src="./assets/img/check.svg" alt="Ícone de marca de verificação representando benefícios como aumento de matrículas, otimização de SEO, e facilidade de uso" width="24" height="24">
                     <div class="benefit-description">
                         <p class="title-benefit">Benefício ou utilidade do produto</p>
                         <p>Utilizamos estratégias de SEO para garantir que sua instituição seja facilmente encontrada nos principais buscadores, como Google e Bing, posicionando-a entre as primeiras pesquisas da sua região com melhorias contínuas para manter sua presença online otimizada."</p>
@@ -211,7 +270,9 @@
                             <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24">Suporte 24h por Chamado;</li>
                         </ul>
                     </div>
-                    <button class="call-to-action-button">Quero esse plano</button>
+                    <a href="https://wa.me/5581997858849?text=Ol%C3%A1%2C%20preciso%20saber%20mais%20sobre%20o%20portal%20de%20capta%C3%A7%C3%A3o%20de%20alunos." target="_blank" style="text-decoration: none;">
+                    <a href="https://wa.me/5581997858849?text=Ol%C3%A1%2C%20preciso%20saber%20mais%20sobre%20o%20portal%20de%20capta%C3%A7%C3%A3o%20de%20alunos." target="_blank" style="width: 100%; text-decoration: none;color: #fff"><button class="call-to-action-button" style="width: 100%;">Quero esse plano</button></a>
+                    </a>
                 </div>
                 <div class="card secondary">
                     <div class="card-list-header">
@@ -234,7 +295,9 @@
                             <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Suporte 24h por Chamado e Chat;</strong></li>
                         </ul>
                     </div>
-                    <button class="call-to-action-button">Quero esse plano</button>
+                    <a href="https://wa.me/5581997858849?text=Ol%C3%A1%2C%20preciso%20saber%20mais%20sobre%20o%20portal%20de%20capta%C3%A7%C3%A3o%20de%20alunos." target="_blank" style="width: 100%; text-decoration: none; color: #07075c;"><button class="call-to-action-button" style="width: 100%;">Quero esse plano</button></a>
+                    
+                   
                 </div>
                 <div class="card">
                     <div class="card-list-header">
@@ -261,7 +324,9 @@
                             <li><img src="./assets/img/check.svg" alt="Prol Educa" width="24" height="24"><strong>Suporte 24h por Chamado e Chat;</strong></li>
                         </ul>
                     </div>
-                    <button class="call-to-action-button">Quero esse plano</button>
+                  
+                    <a href="https://wa.me/5581997858849?text=Ol%C3%A1%2C%20preciso%20saber%20mais%20sobre%20o%20portal%20de%20capta%C3%A7%C3%A3o%20de%20alunos." target="_blank" style="width: 100%; text-decoration: none;color: #fff"><button class="call-to-action-button" style="width: 100%;">Quero esse plano</button></a>
+                   
                 </div>
 
             </div>
@@ -297,15 +362,24 @@
                 <h1>Gostaria de agendar uma reunião?</h1>
                 <p>Quer saber como nosso portal de captação de alunos pode ajudar sua instituição? Agende uma reunião e descubra como aumentar suas matrículas de forma simples e eficaz.</p>
             </div>
-            <form class="form-contact">
+            <form action="enviar.php" method="POST" id="formulario" class="form-contact">
                 <input type="text" id="nome" name="nome" placeholder="Nome" required>
                 <input type="email" id="email" name="email" placeholder="E-mail" required>
                 <input type="text" id="whatsapp" name="whatsapp" placeholder="Whatsapp" required>
-                <input type="date" id="whatsapp" name="whatsapp" placeholder="Whatsapp" required>
-                <button class="call-to-action-button" type="button">Marcar Reunião</button>
+                <input type="date" id="data" name="data" placeholder="data" required>
+                <button class="call-to-action-button" type="submit">Marcar Reunião</button>
             </form>
         </section>
     </section>
+                <!-- modal do formulario -->
+                <div id="modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Reunião Agendada!</h2>
+                        <p>Sua solicitação foi enviada com sucesso. Aguarde nosso retorno.</p>
+                    </div>
+                </div>
+                <!-- fim do modal -->
 
     <section class="aboutus" id="aboutus">
         <section class="container">
@@ -319,20 +393,19 @@
                     Já conseguimos impactar mais de 20 mil famílias beneficiadas com as bolsas de estudos de até 80% de desconto, em escolas, faculdades, cursos técnicos e cursos de idiomas.</p>
             </div>
             <div class="about-right">
-                <img src="./assets/img/proleduca.png" alt="Prol Educa" width="600" height="373">
+            <img src="./assets/img/proleduca.png" alt="Imagem da equipe Prol Educa, uma startup pernambucana que oferece bolsas de estudo e facilita a captação de alunos" width="600" height="373">
+
             </div>
         </section>
     </section>
 
     <section class="partners">
         <section class="container">
-            <img src="./assets/img/google_for_startups.png" alt="Google for Startups" width="105" height="92">
-            <img src="./assets/img/ambevvoa.png" alt="Ambev VOA" width="132" height="46">
-            <img src="./assets/img/bndes.png" alt="BNDES" width="163" height="78">
-            <img src="./assets/img/estacaohack.png" alt="Estação Hack" width="162" height="38">
-            <!-- <img src="./assets/img/startupne.png" alt="Startup NE" width="132" height="75"> -->
-            <img src="./assets/img/td_impacta.png" alt="TD Impacta" width="164" height="26">
-            <img src="./assets/img/vumborastartups.png" alt="Vum Bora Startup" width="132" height="67">
+            <img src="./assets/img/google_for_startups.png" alt="Logo Google for Startups, parceiro do Prol Educa" width="105" height="92">
+            <img src="./assets/img/ambevvoa.png" alt="Logo Ambev VOA, parceiro do Prol Educa" width="132" height="46">
+            <img src="./assets/img/bndes.png" alt="Logo BNDES, parceiro do Prol Educa" width="163" height="78">
+            <img src="./assets/img/estacaohack.png" alt="Logo Estação Hack, parceiro do Prol Educa" width="162" height="38">
+            <img src="./assets/img/td_impacta.png" alt="Logo TD Impacta, parceiro do Prol Educa" width="164" height="26">
         </section>
     </section>
 
@@ -366,6 +439,7 @@
         </section>
     </footer>
 
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,7 @@
+
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-SSL} !on
+RewriteCond %{HTTP_HOST} ^portalparaescolas\.com\.br$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.portalparaescolas\.com\.br$
+RewriteRule ^(.*)$ "https\:\/\/www\.portalparaescolas\.com\.br\/$1" [R=301,L]

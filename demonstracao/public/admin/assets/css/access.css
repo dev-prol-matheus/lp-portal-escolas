@@ -1,0 +1,340 @@
+/* Made with love by Mutiullah Samim*/
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Numans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: url('../img/crianca-estudando.jpg'); */
+    background-image: url('../img/fachada-colegio-israel.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    filter: brightness(30%);
+}
+
+
+.container{
+height: 100%;
+align-content: center;
+}
+
+.card{
+/* height: 370px; */
+margin-top: auto;
+margin-bottom: auto;
+padding: 32px 24px;
+border-radius: 8px;
+width: 400px;
+background-color: rgba(0,0,0,0.7) !important;
+}
+
+.card p{
+margin: 0;
+}
+
+.card button{
+width: 100%;
+}
+
+.card .form-group,
+.card form{
+margin: 0;
+}
+
+.card form{
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+
+.card .card-header,
+.card .card-body{
+padding: 0;
+}
+
+.social_icon span{
+font-size: 60px;
+margin-left: 10px;
+color: #ffffff;
+}
+
+.social_icon span:hover{
+color: white;
+cursor: pointer;
+}
+
+.card-header h3{
+color: white;
+text-align: center;
+font-weight: bold !important;
+}
+
+.social_icon{
+position: absolute;
+right: 20px;
+top: -45px;
+}
+
+.input-group-prepend span{
+/* width: 50px; */
+background-color: #e0e0e0;;
+color: #8d8d8d;
+border:0 !important;
+}
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+#mensagem{
+    text-align: center;
+    color: #ffffff;
+    text-decoration: solid;
+}
+
+#texto-esqueci-a-senha{
+    text-align: center;
+    color: #ffffff;
+    text-decoration: solid;
+}
+
+.remember{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: #FEB21F ;
+width: 100px;
+}
+
+.login_btn_recuperacao_senha{
+    color: black;
+    background-color: #FEB21F ;
+    width: 200px;
+
+}
+
+.login_btn:hover{
+color: black;
+background-color: white;
+}
+
+.links{
+color: white;
+}
+
+.links a{
+margin-left: 4px;
+color: #FEB21F ;
+}
+
+#loginIncorreto{
+    color: #fff !important;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.4);
+    border: none;
+}
+
+#reset-realizado{
+    color: #fff !important;
+    text-align: center;
+    background-color: rgba(6, 162, 0, 0.3);
+    border: none;
+}
+
+.linkWpp{
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.back-button {
+    position: fixed;
+    top: 40px; /* Ajuste a distância do topo conforme necessário */
+    left: 20px;
+    background-color: rgba(0,0,0,0.7) !important;
+    color: #ffffff;
+    padding: 12px 24px; /* Ajuste o padding para aumentar o tamanho do botão */
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+    z-index: 1000; /* Garantir que fique acima dos outros elementos */
+}
+.back-button:hover {
+    background-color: #d1a30c;
+    transform: translateY(-2px); /* Move o botão um pouco para cima */
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Aumenta ligeiramente a sombra ao passar o mouse */
+}
+
+@media only screen and (max-width: 600px) {
+    .back-button {
+        top: 20px;
+        left: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .card{
+        /* height: 300px; */
+        margin-top: auto;
+        margin-bottom: auto;
+        width: 400px;
+        background-color: rgba(0,0,0,0.7) !important;
+        }
+
+        .social_icon span{
+        font-size: 60px;
+        margin-left: 10px;
+        color: #ffffff;
+        }
+
+        .social_icon span:hover{
+        color: white;
+        cursor: pointer;
+        }
+
+        .card-header h3 {
+        color: white;
+        text-align: center;
+        font-weight: bold !important;
+        }
+
+        .social_icon{
+        position: absolute;
+        right: 20px;
+        top: -45px;
+        }
+
+        .input-group-prepend span{
+        width: 50px;
+        background-color: #FEB21F ;
+        color: black;
+        border:0 !important;
+        }
+
+        input:focus{
+        outline: 0 0 0 0  !important;
+        box-shadow: 0 0 0 0 !important;
+
+        }
+
+        #mensagem{
+            text-align: center;
+            color: #ffffff;
+            text-decoration: solid;
+        }
+
+        #texto-esqueci-a-senha{
+            text-align: center;
+            color: #ffffff;
+            text-decoration: solid;
+        }
+
+        .remember{
+        color: white;
+        }
+
+        .remember input
+        {
+        width: 20px;
+        height: 20px;
+        margin-left: 15px;
+        margin-right: 5px;
+        }
+
+        .login_btn{
+        color: black;
+        background-color: #FEB21F ;
+        width: 100px;
+        }
+
+        .login_btn_recuperacao_senha{
+            color: black;
+            background-color: #FEB21F;
+            width: 200px;
+
+        }
+
+        .login_btn:hover{
+        color: black;
+        background-color: white;
+        }
+
+        .links{
+        color: white;
+        }
+
+        .links a{
+        margin-left: 4px;
+        color: #FEB21F;
+        }
+
+        #loginIncorreto{
+            color: #fff !important;
+            text-align: center;
+            background-color: rgba(255, 0, 0, 0.4);
+            border: none;
+        }
+
+        #reset-realizado{
+            color: #fff !important;
+            text-align: center;
+            background-color: rgba(6, 162, 0, 0.3);
+            border: none;
+        }
+
+        .linkWpp{
+            color: #fff !important;
+            text-decoration: none !important;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 40px; /* Ajuste a distância do topo conforme necessário */
+            left: 20px;
+            background-color: rgba(0,0,0,0.7) !important;
+            color: #ffffff;
+            padding: 12px 24px; /* Ajuste o padding para aumentar o tamanho do botão */
+            border-radius: 25px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+            z-index: 1000; /* Garantir que fique acima dos outros elementos */
+        }
+        .back-button:hover {
+            background-color: #d1a30c;
+            transform: translateY(-2px); /* Move o botão um pouco para cima */
+            text-decoration: none;
+            color: #fff;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Aumenta ligeiramente a sombra ao passar o mouse */
+        }
+}
